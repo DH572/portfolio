@@ -1,0 +1,61 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  width: 75%;
+}
+
+.profile {
+  border: 5px solid white;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.profile-top {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  border: 5px solid black;
+  padding-left: 5rem;
+  border-right: 0;
+  border-left: 0;
+  background-image: url(./assets/images/coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.profile-text {
+  font-weight: bold;
+  color: white;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+.computer {
+  background-image: url(./assets/images/dots_3.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 450px;
+}
+
+.resume-title {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #75c2f6;
+}
+
+.text-title {
+  font-weight: bold;
+}
+
+.pro-img {
+  height: 300px;
+  width: 600px;
+  object-fit: cover;
+}
+
+.contact {
+  font-size: x-large;
+  font-weight: bold;
+  color: #75c2f6;
+}
