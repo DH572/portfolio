@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
+    <header class="d-flex flex-wrap justify-content-end py-3 border-bottom">
       <a
         href="/"
         class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
@@ -27,7 +27,7 @@
         <svg class="bi me-2" width="40" height="32">
           <use xlink:href="#bootstrap"></use>
         </svg>
-        <span class="fs-4">My Portfolio</span>
+        <span class="fs-4">Darren's Portfolio</span>
       </a>
 
       <ul class="nav nav-pills">
@@ -64,165 +64,424 @@
           <h1
             class="display-5 fw-bold text-body-emphasis lh-1 mb-3 profile-text"
           >
-            Hi. I'm Darren, a programmer.
+            Hi. I'm Darren.
           </h1>
           <p class="lead">
-            I am a practicing web developer that's well versed in many coding
-            languages and principles. I am still in school and am working
-            towards becoming a full stack developer.
+            A web developer with expertise in a diverse range of coding languages and principles. Passionate about continuously enhancing proficiency to enhance user experience.
           </p>
         </div>
       </div>
     </div>
-    <div class="computer container d-flex justify-content-center">
-      <img src="./assets/images/computer.gif" width="250" />
-    </div>
-      <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h2 class="mb-2 resume-title">Skills</h2>
-          <hr />
-          <div class="subheading mb-3">Programming Languages</div>
-          <ul>
-            <li>
-              Programming languages: Python, C++, Java, C#, JavaScript, CSS,
-              HTML
-            </li>
-            <li>Programs: Unity, Maya, KiCad, Visual Studio</li>
-          </ul>
-        </div>
-      </section>
+    <div class="arrow-body">
+      <span></span>
+      <span></span>
     </div>
     <section class="page-section portfolio" id="portfolio">
       <div class="container">
         <!-- Portfolio Section Heading-->
-        <h2 class="mb-2 resume-title">Portfolio</h2>
+        <h2 class="mb-2 resume-title">Projects</h2>
         <hr />
         <!-- Icon Divider-->
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
         </div>
         <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
+        <div class="container portfolio-display">
           <!-- Portfolio Item 1-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal1"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <svg
-                    class="svg-inline--fa fa-plus fa-3x"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="plus"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                    ></path></svg
-                  ><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+          <div class="row">
+            <div class="container col-lg-6">
+              <h4>Manga Drive</h4>
+              <p class="mb-2">A convenient place to store your all the manga you've read and your opinion of them. Find the manga you read then create a review and rating for them. Go back and edit or delete your entries.</p>
+              <p class="my-0">Using:</p>
+              <ul class="mb-1">
+                <li>PostgreSQL</li>
+                <li>EJS</li>
+                <li>RapidAPI</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+              </ul>
+              <a class="my-0" href="https://github.com/DH572/Manga-Drive">GitHub</a>
+            </div>
+            <div class="container col-lg-6">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/manga_0.png"
+                      class="d-block w-100"
+                      alt="manga drive page with searh bar"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/manga_1.png"
+                      class="d-block w-100"
+                      alt="manga search result list"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/manga_2.png"
+                      class="d-block w-100"
+                      alt="manga review page"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <a href="https://lydschung.itch.io/sea-of-beats">
-                <img
-                  class="img-fluid pro-img"
-                  src="assets/images/scaffold.png"
-                  alt="project"
-              /></a>
             </div>
           </div>
+          <hr />
           <!-- Portfolio Item 2-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal2"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <svg
-                    class="svg-inline--fa fa-plus fa-3x"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="plus"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                    ></path></svg
-                  ><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+          <div class="row">
+            <div class="container col-lg-6">
+              <div id="carouselExampleIndicators2" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/pokemon_randomizer_2.png"
+                      class="d-block w-100"
+                      alt="couple"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/pr1.png"
+                      class="d-block w-100"
+                      alt="dog"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/pr0.png"
+                      class="d-block w-100"
+                      alt="family"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators2"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators2"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <a href="https://dh572.github.io/CSS-Meme/">
-                <img
-                  class="img-fluid pro-img"
-                  src="assets/images/meme_final.png"
-                  alt="meme"
-              /></a>
+            </div>
+            <div class="container col-lg-6">
+              <h4>Pokemon Team Randomizer</h4>
+              <p class="mb-2">Create your own randomized pokemon teams with all their evolutions, abilities, moves, and items planned out. Choose which attributes to keep and which to reroll until you get your desired result</p>
+              <p class="my-0">Using:</p>
+              <ul class="mb-1">
+                <li>EJS</li>
+                <li>APIs</li>
+                <li>CSS</li>
+                <li>Node.js</li>
+              </ul>
+              <a href="https://github.com/DH572/Pok-mon-Team-Randomizer">GitHub</a>
             </div>
           </div>
+          <hr />
           <!-- Portfolio Item 3-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal3"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <svg
-                    class="svg-inline--fa fa-plus fa-3x"
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="plus"
-                    role="img"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
-                    data-fa-i2svg=""
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M240 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H176V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H240V80z"
-                    ></path></svg
-                  ><!-- <i class="fas fa-plus fa-3x"></i> Font Awesome fontawesome.com -->
+          <div class="row">
+            <div class="col-lg-6">
+              <h4>MyTaskList</h4>
+              <p class="mb-2">A simple place to organize your tasks for the day. Allows you to add, delete, and edit tasks quickly and easily. Can also press "switch" to navigate to a hidden "other" list to detail more secret tasks.</p>
+              <p class="my-0">Using:</p>
+              <ul class="mb-1">
+                <li>EJS</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>BootstrapUI</li>
+                <li>Node.js</li>
+              </ul>
+              <a href="https://github.com/DH572/Task-List-Projectr">GitHub</a>
+            </div>
+            <div class="container col-lg-6">
+              <div id="carouselExampleIndicators3" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators3
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/task_0.png"
+                      class="d-block w-100"
+                      alt="couple"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/task1.png"
+                      class="d-block w-100"
+                      alt="dog"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/task3.png"
+                      class="d-block w-100"
+                      alt="family"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators3"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators3"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <a href="https://dh572.github.io/CSS-Meme/"></a>
-              <img
-                class="img-fluid pro-img"
-                src="assets/images/dog.png"
-                alt="dog"
-              />
+            </div>
+          </div>
+          <hr />
+          <!-- Portfolio Item 4-->
+          <div class="row">
+            <div class="container col-6">
+              <div id="carouselExampleIndicators4" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators4"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators4"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators4"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/rhythm1.png"
+                      class="d-block w-100"
+                      alt="couple"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/rhythm2.png"
+                      class="d-block w-100"
+                      alt="dog"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/rhythm4.png"
+                      class="d-block w-100"
+                      alt="family"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators4"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators4"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-6">
+              <h4>Sea Of Beats</h4>
+              <p class="mb-2">A rhythm game built on Unity in a 13 person team with 4 programmers Simple game design with engaging gameplay, good music, and detailed art. Play through and see how well you score!</p>
+              <p class="my-0">Worked using:</p>
+              <ul class="mb-1">
+                <li>GitHub</li>
+                <li>Unity</li>
+                <li>C#</li>
+              </ul>
+              <div class="d-flex d-wrap">
+                <a href="https://github.com/lsantos7227/scaffold_projectr">GitHub</a>
+                <p>,&nbsp</p>
+                <a href="https://lydschung.itch.io/sea-of-beats">Itch.io</a>
+                <p>,&nbsp</p>
+                <a href="https://www.youtube.com/watch?v=Qt5QvwAic0w&ab_channel=CarsonBeye">YouTube</a>
+              </div>
             </div>
           </div>
         </div>
+        <hr />
       </div>
     </section>
+    <br />
+    <div class="skills container">
+      <section class="resume-section" id="skills">
+        <div class="container resume-section-content">
+          <h2 class="mb-2 resume-title">About Me</h2>
+          <hr />
+          <p>
+            Thanks for scrolling so far! I am a third-year student at the University of California, Irvine, pursuing a Bachelor of Science in Computer Science with a specialization in Information.
+            <br />
+            In my free time, I enjoy playing videogames like Genshin Impact and I have been trying to get into creative writing recently.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="skills container">
+      <section class="resume-section" id="skills">
+        <div class="container resume-section-content">
+          <h2 class="mb-2 resume-title">Skills</h2>
+          <hr />
+          <div class="subheading mb-3">Programming Languages</div>
+          <ul>
+            <li>
+              HTML, CSS, JavaScript, Java, C++, Python, C#, SQL
+            </li>
+            <li>Others: BootstrapUI, jQuery, Express.js, Node,js, PostgreSQL, MySQL, React.js, Git, Postman</li>
+          </ul>
+        </div>
+      </section>
+    </div>
     <section class="page-section" id="contact-me">
       <div class="container">
         <!-- Portfolio Section Heading-->
@@ -247,30 +506,9 @@
           </svg>
         </a>
         <span class="mb-3 mb-md-0 text-body-secondary"
-          >© 2023 Darren Huynh</span
-        >
+          >© 2023 Darren Huynh
+        </span>
       </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#"
-            ><svg class="bi" width="24" height="24">
-              <use xlink:href="#twitter"></use></svg
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#"
-            ><svg class="bi" width="24" height="24">
-              <use xlink:href="#instagram"></use></svg
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-body-secondary" href="#"
-            ><svg class="bi" width="24" height="24">
-              <use xlink:href="#facebook"></use></svg
-          ></a>
-        </li>
-      </ul>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
